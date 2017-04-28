@@ -1,0 +1,8 @@
+<resources>
+    <string name="botonUno">Crear una Cuenta</string>
+    <string name="botonDos">Iniciar Sesión</string>
+    <string name="botonTres">Email</string>
+    <string name="botonCuatro">Contraseña</string>
+
+
+</resources>
