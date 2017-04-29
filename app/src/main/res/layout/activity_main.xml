@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imagenUno"
     tools:context="uta.uta.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imagenUno"
+        android:id="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/CrearUnaCuenta"
+        android:layout_marginBottom="54dp"
+        android:id="@+id/imageButton"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/relativeLayout" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/IniciarSesion"
+        android:layout_marginStart="8dp"
+        android:id="@+id/imageButton2"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton" />
 
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="425dp"
-            android:text="@string/botonUno"
-            android:textColor="@color/colorBotonUno"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="425dp"
-            android:text="@string/botonDos"
-            android:textColor="@color/colorBotonDos"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            />
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
