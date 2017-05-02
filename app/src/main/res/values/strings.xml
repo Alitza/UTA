@@ -1,8 +1,10 @@
 <resources>
-    <string name="botonUno">Crear una Cuenta</string>
-    <string name="botonDos">Iniciar Sesión</string>
-    <string name="botonTres">Email</string>
-    <string name="botonCuatro">Contraseña</string>
+    <string name="titulo">UTA</string>
+
+    <string name="botonuno">Crear una Cuenta</string>
+    <string name="botondos">Iniciar Sesión</string>
+    <string name="botontres">Email</string>
+    <string name="botoncuatro">Contraseña</string>
 
 
 </resources>
