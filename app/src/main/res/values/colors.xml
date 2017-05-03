@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorbotonuno">#666666</color>
+    <color name="coloruno">#666666</color>
+    <color name="colordos">#00A5DB</color>
 
 
 </resources>

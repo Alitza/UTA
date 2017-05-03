@@ -23,31 +23,30 @@
     </RelativeLayout>
 
     <Button
-        android:text="Crear una Cuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="38dp"
         android:id="@+id/button1"
-        android:textColor="@color/colorbotonuno"
-        android:background="flat"
-        android:typeface="sans"
-        android:textSize="10sp"
-        />
-    <Button
-        android:text="Iniciar Sesión"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="195dp"
         android:layout_marginBottom="38dp"
-        android:id="@+id/button2"
-        android:textColor="@color/colorbotonuno"
+        android:layout_marginStart="50dp"
         android:background="flat"
-        android:typeface="sans"
+        android:text="Crear una Cuenta"
+        android:textColor="@color/coloruno"
         android:textSize="10sp"
-        />
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="195dp"
+        android:background="flat"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/coloruno"
+        android:textSize="10sp"
+        android:typeface="sans" />
 
 
 </RelativeLayout>
