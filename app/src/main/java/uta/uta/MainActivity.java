@@ -1,16 +1,21 @@
 package uta.uta;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
 
-    private static final  R = ;
+    private Button iniciarSesion;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +25,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_main);
-
+        iniciarSesion = (Button) findViewById(R.id.button2);
+        iniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMessage(v);
+            }
+        });
 
 
     }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, InicioSesion.class);
+        startActivity(intent);
+
+    }
+
 }
