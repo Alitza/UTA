@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="coloruno">#666666</color>
-    <color name="colordos">#00A5DB</color>
+    <color name="colordos">#00a5db</color>
+    <color name="colortres">#FFFF</color>
 
 
 </resources>

@@ -10,9 +10,9 @@ import android.view.ViewGroup;
  * Created by Dora Mar on 4/05/17.
  */
 
-public class Fragmento extends Fragment {
+public class MeGusta extends Fragment {
 
-    public Fragmento() {
+    public MeGusta() {
 
     }
 
@@ -21,7 +21,7 @@ public class Fragmento extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragmento, container, false);
+        return inflater.inflate(R.layout.megusta, container, false);
     }
 
 }

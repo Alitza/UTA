@@ -33,7 +33,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="250dp"
-                android:src="@drawable/subirarchivo"
+                android:src="@mipmap/subirarchivo"
                 />
 
             <TextView

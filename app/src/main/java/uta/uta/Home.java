@@ -23,36 +23,30 @@ public class Home extends AppCompatActivity {
         barrita.setupWithViewPager(pagina);
         createTabIcons();
 
-
-
     }
     private void createTabIcons() {
 
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabOne.setText("Tab 1");
-        tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.iconomurodesactivado, 0, 0);
+        tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.iconohome, 0, 0);
         barrita.getTabAt(0).setCustomView(tabOne);
 
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabTwo.setText("Tab 2");
-        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.iconogustardesactivado, 0, 0);
+        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.iconomegusta, 0, 0);
         barrita.getTabAt(1).setCustomView(tabTwo);
 
         TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabThree.setText("Tab 3");
-        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.icononotificaciondesactivado, 0, 0);
+        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.icononotificaciones, 0, 0);
         barrita.getTabAt(2).setCustomView(tabThree);
 
         TextView tabFour = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        tabFour.setText("Tab 4");
-        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.iconoperfildesactivado, 0, 0);
+        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.mipmap.iconoperfil, 0, 0);
         barrita.getTabAt(3).setCustomView(tabThree);
     }
 
     private void createViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.agregarFragmento(new Fragmento(), "Tab 1");
-        adapter.agregarFragmento(new Fragmento(), "Tab 2");
+        adapter.agregarFragmento(new MeGusta(), "Tab 2");
         adapter.agregarFragmento(new Fragmento(), "Tab 3");
         adapter.agregarFragmento(new Fragmento(), "Tab 4");
         viewPager.setAdapter(adapter);
