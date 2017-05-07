@@ -5,4 +5,7 @@
     <!-- Customize your theme here. -->
 </style>
 
+<style name="Button">
+    <item name="android:background">@null</item>
+</style>
 </resources>

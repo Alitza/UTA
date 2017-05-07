@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/home"
@@ -8,31 +10,50 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:cardPreventCornerOverlap="false">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="106dp"
-            android:paddingEnd="5dp"
-            android:paddingStart="5dp">
 
-            <ImageView
+            android:layout_margin="20dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="290dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:onClick="sendMessage (MainActivity)"
+                app:srcCompat="@drawable/foto" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp">
+
+            <ImageButton
                 android:id="@+id/person_photo1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="200dp"
-                android:src="@mipmap/iconocomentarios" />
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="250dp"
+                android:src="@mipmap/iconocomentarios"
 
-            <ImageView
+                />
+
+            <ImageButton
                 android:id="@+id/person_photo2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="260dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="290dp"
                 android:src="@mipmap/iconocompartir" />
 
             <TextView
@@ -40,21 +61,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/person_photo"
                 android:text="15"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:typeface="sans" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/person_photo"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginStart="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
                 android:src="@mipmap/iconocontador" />
 
 
