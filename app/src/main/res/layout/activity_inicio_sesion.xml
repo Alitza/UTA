@@ -14,8 +14,7 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            />
+            android:layout_alignParentStart="true" />
 
 
         <EditText
@@ -29,15 +28,6 @@
             android:textColorHint="@color/coloruno"
             android:textSize="15sp" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText"
-            android:layout_alignTop="@+id/editText"
-            android:layout_marginTop="35dp"
-            android:hint="@string/botoncuatro"
-            android:textColorHint="@color/coloruno"
-            android:textSize="15sp" />
 
         <Button
             android:id="@+id/button"
@@ -47,10 +37,22 @@
             android:layout_alignParentStart="true"
             android:layout_marginBottom="70dp"
             android:layout_marginStart="135dp"
-
             android:text="@string/botoncinco"
             android:textColor="@color/coloruno"
             android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="153dp"
+            android:layout_marginStart="54dp"
+            android:inputType="none|textCapCharacters"
+            android:text="Contraseña"
+            android:textColorHint="@color/coloruno"
+            android:textSize="15sp" />
 
 
     </RelativeLayout>

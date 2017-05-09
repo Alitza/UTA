@@ -5,9 +5,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import org.json.JSONObject;
 
 /**
  * Created by Dora Mar on 6/05/17.
@@ -15,21 +19,15 @@ import android.widget.TextView;
 
 public class Perfil extends Fragment {
 
-    private ProgressBar progressBar;
-    private ImageView imageView;
-    private TextView textviewname, textviewusername;
-    private String[] objetos = new String[3];
-    private String id = "perfiles";
-    private String url1 = "https://graph.facebook.com/" + id;
-    private String url2 = "https://graph.facebook.com/" + id + "/picture?redirect=0&type=large";
+
 
     public Perfil() {
-
 
 
     }
 
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
     }
 

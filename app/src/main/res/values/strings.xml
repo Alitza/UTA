@@ -1,20 +1,12 @@
 <resources>
-    <string name="titulo">UTA</string>
+    <string name="app_name">JSON Picasso</string>
 
-    <!--Pantalla inicial-->
-    <string name="botonuno">Crear una Cuenta</string>
-    <string name="botondos">Iniciar Sesión</string>
-
-    <!--Segunda Pantalla-->
-    <string name="botontres">Email</string>
-    <string name="botoncuatro">Contraseña</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="botontres">Name</string>
     <string name="botoncinco">Iniciar Sesión</string>
-
-    <!--Pantalla registro-->
     <string name="botonseis">Nombre</string>
     <string name="botonsiete">Email</string>
-    <string name="botonocho">Contraseña</string>
     <string name="botonnueve">Registrarse</string>
-
 
 </resources>

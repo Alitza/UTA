@@ -7,41 +7,71 @@
     android:orientation="vertical"
     tools:context=".Home">
 
+
     <android.support.v7.widget.CardView
         android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="300dp"
+        android:layout_marginBottom="210dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home"
+        >
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="190dp"
+                android:background="@drawable/music" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:indeterminate="true"></ProgressBar>
 
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:indeterminate="true"
-            android:visibility="gone" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="160dp"
+                android:src="@drawable/iconoparaperfil" />
 
-        <TextView
-            android:id="@+id/textviewname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:text="Name" />
 
-        <TextView
-            android:id="@+id/textviewusername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username" />
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="210dp"
+                android:text="Usuario"
+                android:textColor="@color/coloruno"
+                android:textSize="35sp"
+                android:typeface="sans"
+                android:layout_marginLeft="135dp"
+                />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="25dp"
 
+                android:text="Espacio para hablar y compartir sobre la música en general"
+                android:textColor="@color/coloruno"
+                android:textSize="15sp"
+                android:typeface="sans" />
+        </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
 
 </LinearLayout>
